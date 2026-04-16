@@ -1,0 +1,20 @@
+# Docker / WSL disks
+Back/Docker/
+*.vhdx
+
+# Angular
+Front/node_modules/
+Front/dist/
+
+# .NET
+Back/**/bin/
+Back/**/obj/
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Logs
+*.log
