@@ -1,0 +1,89 @@
+/* ===== layout básico ===== */
+.wrapper {
+  display: flex;            /* muito importante */
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+/* SIDEBAR - largura fixa em desktop */
+.sidebar {
+  width: 260px;             /* ajuste se quiser outra largura */
+  flex: 0 0 260px;
+  background: #ffffff;
+  border-right: 1px solid rgba(0,0,0,0.04);
+  box-shadow: 2px 0 8px rgba(0,0,0,0.04);
+  transition: transform .22s ease, width .22s ease;
+  position: relative;      /* mantém no fluxo (Opção B) */
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+/* se quiser fixed (opção A) troque position: fixed no .sidebar e ajuste main-panel margin-left */
+.sidebar.fixed {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* opcional: variante colapsada (fechar) */
+.sidebar.collapsed {
+  width: 0;
+  overflow: hidden;
+}
+
+/* variante para mobile (overlay) */
+
+@media (max-width: 991px) {
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    width: 260px;
+    background: #fff;
+  }
+  .sidebar.open {
+    transform: translateX(0);
+  }
+}
+
+/* MAIN PANEL ocupa o resto */
+.main-panel {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: margin-left .22s ease;
+  /* se sidebar é inline (position:relative), não precisa de margin-left.
+     se preferir sidebar fixa, descomente abaixo: */
+  /* margin-left: 260px; */
+}
+
+/* Caso você use .sidebar.fixed -> descomente */
+@media (min-width: 992px) {
+  .sidebar.fixed ~ .main-panel {
+    margin-left: 260px; /* empurra main quando sidebar fixed */
+  }
+}
+
+/* Conteúdo principal */
+.main-content {
+  padding: 16px;
+  flex: 1 1 auto;
+}
+
+/* Ajustes da ul.nav p/ evitar que ocupe 100% verticalmente */
+.sidebar-wrapper .nav {
+  margin: 0;
+  padding: 8px 0;
+}
+.sidebar-wrapper .nav .nav-item .nav-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-wrapper .nav .nav-item .nav-link p {
+  margin: 0 0 0 8px;
+  line-height: 1;
+}

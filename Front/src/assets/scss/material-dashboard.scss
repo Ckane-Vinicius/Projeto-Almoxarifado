@@ -1,0 +1,122 @@
+/*!
+
+=========================================================
+* Material Dashboard Angular - v2.8.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-dashboard-angular2
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/material-dashboard-angular2/blob/master/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
+ @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+ @import "core/variables";
+ @import "core/mixins";
+ @import "bootstrap/scss/bootstrap";
+
+
+ // Core Components
+ @import "core/buttons";
+ @import "core/checkboxes";
+ @import "core/radios";
+ @import "core/forms";
+ @import "core/input-group";
+ @import "core/images";
+ @import "core/navbar";
+ @import "core/alerts";
+ @import "core/type";
+ @import "core/tabs";
+ @import "core/tooltip";
+ @import "core/popover";
+ @import "core/dropdown";
+ @import "core/togglebutton";
+ @import "core/ripples";
+ @import "core/footers";
+ @import "core/sidebar-and-main-panel";
+ @import "core/fixed-plugin";
+ @import "core/tables";
+ @import "core/misc";
+
+@import "core/cards";
+@import "core/cards/card-stats";
+@import "core/cards/card-profile";
+@import "core/cards/card-plain";
+
+ //plugin scss
+ @import "core/plugins/animate";
+ @import "core/plugins/chartist";
+ @import "core/plugins/perfect-scrollbar";
+
+ @import "core/responsive";
+
+ @import "core/angular-modal.scss";
+
+
+/* ============================
+   OVERRIDES PARA TEMA AZUL
+   Material Dashboard Angular
+   ============================ */
+
+/* Tons de azul (personalizáveis) */
+$blue-dark:  #1565c0;
+$blue-mid:   #1e88e5;
+$blue-light: #64b5f6;
+
+/* --- PRIMARY (antes roxo) -> Azul escuro + azul médio --- */
+.card-header-primary,
+.card .card-header.card-header-primary,
+.card .card-header-primary:not(.card-header-icon):not(.card-header-text),
+.card.card-rotate.bg-primary .front,
+.card.card-rotate.bg-primary .back {
+  background: linear-gradient(60deg, $blue-mid, $blue-dark) !important;
+  color: #fff !important;
+}
+
+.card .card-header.card-header-primary .card-title,
+.card .card-header.card-header-primary .card-category {
+  color: #fff !important;
+}
+
+/* --- WARNING (antes amarelo) -> Azul claro + azul médio --- */
+.card-header-warning,
+.card .card-header.card-header-warning,
+.card .card-header-warning:not(.card-header-icon):not(.card-header-text),
+.card.card-rotate.bg-warning .front,
+.card.card-rotate.bg-warning .back {
+  background: linear-gradient(60deg, $blue-light, $blue-mid) !important;
+  color: #fff !important;
+}
+
+.card .card-header.card-header-warning .card-title,
+.card .card-header.card-header-warning .card-category {
+  color: #fff !important;
+}
+
+/* Corrigir style inline (se houver) */
+.card .card-header[style*="background"] {
+  background: linear-gradient(60deg, $blue-mid, $blue-dark) !important;
+}
+
+/* Botões primary */
+.btn-primary {
+  background-color: $blue-mid !important;
+  border-color: $blue-dark !important;
+}
+
+.btn-primary:hover {
+  background-color: $blue-dark !important;
+}
+
+/* Ícones dentro dos cards */
+.card-header i,
+.fa-chevron-down,
+.fa-chevron-up {
+  color: #fff !important;
+}

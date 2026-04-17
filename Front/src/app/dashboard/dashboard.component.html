@@ -1,0 +1,146 @@
+<div class="main-content">
+<div class="container-fluid">
+  <div class="row mt-3">
+
+    <div class="col-lg-4 col-md-5 col-sm-12">
+      <div class="card">
+        <div class="card-header card-header-primary">
+          <h4 class="card-title mb-0">Cadastro de DDL</h4>
+          <p class="card-category small mb-0">Cadastre CNPJ, Razão Social, Valor e prazo</p>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+            <div class="form-group">
+
+              <!-- SELECT DE EMPRESAS -->
+              <div class="form-group">
+                <label for="empresaSelect">Selecionar Empresa</label>
+                <select id="empresaSelect" formControlName="empresaSelect" class="form-control">
+                  <option value="">-- Escolha uma empresa --</option>
+                  <option *ngFor="let e of empresas" [value]="e.key">{{ e.empresa }} — {{ e.cnpjEmpresa }}</option>
+                </select>
+              </div>
+
+              <label for="cnpj">CNPJ</label>
+              <input id="cnpj" formControlName="cnpj" type="text" class="form-control" placeholder="00.000.000/0000-00">
+              <div *ngIf="form.get('cnpj')?.touched && form.get('cnpj')?.invalid" class="text-danger small">Preencha o CNPJ.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="razaoSocial">Razão Social</label>
+              <input id="razaoSocial" formControlName="razaosocial" type="text" class="form-control" placeholder="Nome / Razão Social">
+            </div>
+
+            <div class="form-group">
+              <label for="valor">Valor (R$)</label>
+              <input id="valor" formControlName="valor" type="number" class="form-control" step="0.01" placeholder="1000.00">
+              <div *ngIf="form.get('valor')?.touched && form.get('valor')?.invalid" class="text-danger small">Informe um valor válido.</div>
+            </div>
+
+           <div class="form-group">
+              <label>Quantidade de Parcelas</label>
+              <input
+                type="number"
+                formControlName="quantidadeParcelas"
+                class="form-control"
+                (input)="onQuantidadeChange()"
+              />
+            </div>
+
+            <div formArrayName="ddls" class="mb-3">
+              <label>DDLs (preencha cada parcela)</label>
+
+              <div *ngFor="let group of ddls.controls; let i = index" [formGroupName]="i" class="mb-2">
+                <div class="input-group">
+                  <input type="number" formControlName="ddl" class="form-control" placeholder="DDL da parcela {{i+1}}">
+                  <div class="input-group-append">
+                    <span class="input-group-text">dias</span>
+                  </div>
+                </div>
+                <div *ngIf="group.get('ddl')?.touched && group.get('ddl')?.invalid" class="text-danger small">
+                  Informe um DDL válido.
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit" [disabled]="loading">Salvar Cadastro</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-8 col-md-7 col-sm-12">
+
+  <div class="card">
+    <div class="card-header card-header-warning d-flex justify-content-between align-items-center">
+      <h4 class="card-title">Registros cadastrados</h4>
+
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Pesquisar CNPJ..."
+        [(ngModel)]="searchCnpj"
+        (input)="filterList()"
+        style="max-width: 250px;"
+      />
+    </div>
+
+    <div class="card-body table-responsive" *ngIf="recordsList.length; else vazio">
+
+      <!-- LOOP DOS CNPJs -->
+      <!-- <div *ngFor="let item of recordsList" class="mb-4 pb-2 border-bottom"> -->
+      <div *ngFor="let item of recordsList" class="mb-4 pb-2 border-bottom">
+        <!-- <small class="text-danger">KEY: {{ item._key }}</small> -->
+        <h5 class="mb-1 d-flex justify-content-between align-items-center" style="cursor:pointer;"
+            (click)="toggle(item._key)">
+          <span><b>CNPJ:</b> {{ item.displayCnpj }}</span>
+          <span><i class="fa" [ngClass]="expanded[item._key] ? 'fa-chevron-up' : 'fa-chevron-down'"></i></span>
+        </h5>
+
+        <p class="text-muted m-0"><b>Empresa:</b> {{ item.empresa }}</p>
+        <p class="text-muted m-0"><b>Razão Social:</b> {{ item.razaoSocial }}</p>
+
+        <div *ngIf="expanded[item._key]">
+            <table class="table table-sm table-hover mt-2">
+            <thead class="text-warning">
+              <tr>
+                <th>#</th>
+                <th>DDL (Dias)</th>
+                <th>Valor</th>
+                <th>Data Pagamento</th>
+                <th>Data Entrada</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let p of item.parcels; let i = index">
+                <td>{{ i + 1 }}</td>
+                <td>{{ p.ddl }} dias</td>
+                <td>{{ formatBRL(p.value) }}</td>
+                <td>{{ formatDateBR(p.dueDate) }}</td>
+                <td>{{ formatDateBR(p.entryDate) }}</td>
+              </tr>
+            </tbody>
+          </table> 
+        </div>
+
+      </div>
+    </div>
+
+    
+
+    <ng-template #vazio>
+      <div class="text-center text-muted p-3">Nenhum registro encontrado.</div>
+    </ng-template>
+
+  </div>
+
+
+<style>
+  /* Pequenos ajustes visuais */
+  #tbl tbody tr td ul { margin:0; padding-left: 16px; }
+  .parcel-item { display:flex; justify-content:space-between; gap:12px; align-items:center; }
+  .parcel-item .meta { font-size:0.95rem; }
+  .btn-sm { padding: .25rem .5rem; font-size: .8rem; border-radius: .2rem; }
+  #noData { display: none; }
+</style>
+

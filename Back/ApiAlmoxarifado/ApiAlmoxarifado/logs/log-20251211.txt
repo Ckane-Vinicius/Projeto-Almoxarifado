@@ -1,0 +1,277 @@
+2025-12-11 12:08:45.749 -03:00 [INF] Now listening on: https://localhost:7227
+2025-12-11 12:08:45.810 -03:00 [INF] Now listening on: http://localhost:5115
+2025-12-11 12:08:45.869 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-11 12:08:45.870 -03:00 [INF] Hosting environment: Development
+2025-12-11 12:08:45.871 -03:00 [INF] Content root path: D:\RepositoryGit\Projeto Almoxarifado\Back\ApiAlmoxarifado\ApiAlmoxarifado
+2025-12-11 12:08:48.682 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/swagger - null null
+2025-12-11 12:08:49.131 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/swagger - 301 0 null 463.5929ms
+2025-12-11 12:08:49.145 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/swagger/index.html - null null
+2025-12-11 12:08:49.331 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/swagger/index.html - 200 null text/html;charset=utf-8 186.1003ms
+2025-12-11 12:08:49.597 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/swagger/swagger-ui.css - null null
+2025-12-11 12:08:49.598 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/swagger/swagger-ui-bundle.js - null null
+2025-12-11 12:08:49.598 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/swagger/swagger-ui-standalone-preset.js - null null
+2025-12-11 12:08:49.676 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-12-11 12:08:49.677 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-12-11 12:08:49.680 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/swagger/swagger-ui.css - 200 152034 text/css 82.6909ms
+2025-12-11 12:08:49.689 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-11 12:08:49.707 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/_vs/browserLink - null null
+2025-12-11 12:08:49.688 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 89.8241ms
+2025-12-11 12:08:49.720 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-12-11 12:08:49.724 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 35.3567ms
+2025-12-11 12:08:49.728 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 129.5964ms
+2025-12-11 12:08:49.827 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/_vs/browserLink - 200 null text/javascript; charset=UTF-8 120.6936ms
+2025-12-11 12:08:50.193 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/swagger/v1/swagger.json - null null
+2025-12-11 12:08:50.206 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.3388ms
+2025-12-11 12:09:33.908 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/api/v1 - null null
+2025-12-11 12:09:33.926 -03:00 [INF] CORS policy execution successful.
+2025-12-11 12:09:33.934 -03:00 [INF] Executing endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 12:09:33.957 -03:00 [INF] Route matched with {action = "Get", controller = "Request01"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ApiAlmoxarifado.Controllers.Request01Controller (ApiAlmoxarifado).
+2025-12-11 12:09:34.950 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[ApiAlmoxarifado.Domain.Entities.Registros, ApiAlmoxarifado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 12:09:36.139 -03:00 [INF] Executed DbCommand (82ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Cnpj], [r].[CnpjEmpresa], [r].[DDL], [r].[Data_entrada], [r].[Data_pagamento], [r].[Empresa], [r].[RazaoSocial], [r].[Valor]
+FROM [Registros] AS [r]
+2025-12-11 12:09:36.219 -03:00 [INF] Executed action ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado) in 2257.1183ms
+2025-12-11 12:09:36.221 -03:00 [INF] Executed endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 12:09:36.227 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/api/v1 - 200 null application/json; charset=utf-8 2319.3082ms
+2025-12-11 12:22:38.989 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/api/v1 - null null
+2025-12-11 12:22:38.998 -03:00 [INF] CORS policy execution successful.
+2025-12-11 12:22:38.999 -03:00 [INF] Executing endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 12:22:39.000 -03:00 [INF] Route matched with {action = "Get", controller = "Request01"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ApiAlmoxarifado.Controllers.Request01Controller (ApiAlmoxarifado).
+2025-12-11 12:22:39.055 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[ApiAlmoxarifado.Domain.Entities.Registros, ApiAlmoxarifado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 12:22:39.074 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Cnpj], [r].[CnpjEmpresa], [r].[DDL], [r].[Data_entrada], [r].[Data_pagamento], [r].[Empresa], [r].[RazaoSocial], [r].[Valor]
+FROM [Registros] AS [r]
+2025-12-11 12:22:39.077 -03:00 [INF] Executed action ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado) in 76.3592ms
+2025-12-11 12:22:39.078 -03:00 [INF] Executed endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 12:22:39.080 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/api/v1 - 200 null application/json; charset=utf-8 91.4999ms
+2025-12-11 12:34:34.995 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/api/v1 - null null
+2025-12-11 12:34:35.004 -03:00 [INF] CORS policy execution successful.
+2025-12-11 12:34:35.006 -03:00 [INF] Executing endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 12:34:35.007 -03:00 [INF] Route matched with {action = "Get", controller = "Request01"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ApiAlmoxarifado.Controllers.Request01Controller (ApiAlmoxarifado).
+2025-12-11 12:34:35.028 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[ApiAlmoxarifado.Domain.Entities.Registros, ApiAlmoxarifado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 12:34:35.051 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Cnpj], [r].[CnpjEmpresa], [r].[DDL], [r].[Data_entrada], [r].[Data_pagamento], [r].[Empresa], [r].[RazaoSocial], [r].[Valor]
+FROM [Registros] AS [r]
+2025-12-11 12:34:35.053 -03:00 [INF] Executed action ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado) in 44.6603ms
+2025-12-11 12:34:35.056 -03:00 [INF] Executed endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 12:34:35.058 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/api/v1 - 200 null application/json; charset=utf-8 62.9764ms
+2025-12-11 13:41:11.783 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/api/v1 - null null
+2025-12-11 13:41:11.791 -03:00 [INF] CORS policy execution successful.
+2025-12-11 13:41:11.792 -03:00 [INF] Executing endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 13:41:11.793 -03:00 [INF] Route matched with {action = "Get", controller = "Request01"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ApiAlmoxarifado.Controllers.Request01Controller (ApiAlmoxarifado).
+2025-12-11 13:41:11.796 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[ApiAlmoxarifado.Domain.Entities.Registros, ApiAlmoxarifado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 13:41:11.818 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Cnpj], [r].[CnpjEmpresa], [r].[DDL], [r].[Data_entrada], [r].[Data_pagamento], [r].[Empresa], [r].[RazaoSocial], [r].[Valor]
+FROM [Registros] AS [r]
+2025-12-11 13:41:11.821 -03:00 [INF] Executed action ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado) in 26.9302ms
+2025-12-11 13:41:11.823 -03:00 [INF] Executed endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 13:41:11.825 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/api/v1 - 200 null application/json; charset=utf-8 42.5933ms
+2025-12-11 13:41:58.720 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/api/v1 - null null
+2025-12-11 13:41:58.728 -03:00 [INF] CORS policy execution successful.
+2025-12-11 13:41:58.729 -03:00 [INF] Executing endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 13:41:58.731 -03:00 [INF] Route matched with {action = "Get", controller = "Request01"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ApiAlmoxarifado.Controllers.Request01Controller (ApiAlmoxarifado).
+2025-12-11 13:41:58.735 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[ApiAlmoxarifado.Domain.Entities.Registros, ApiAlmoxarifado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 13:41:58.743 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Cnpj], [r].[CnpjEmpresa], [r].[DDL], [r].[Data_entrada], [r].[Data_pagamento], [r].[Empresa], [r].[RazaoSocial], [r].[Valor]
+FROM [Registros] AS [r]
+2025-12-11 13:41:58.745 -03:00 [INF] Executed action ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado) in 11.8422ms
+2025-12-11 13:41:58.749 -03:00 [INF] Executed endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 13:41:58.751 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/api/v1 - 200 null application/json; charset=utf-8 31.0568ms
+2025-12-11 13:53:46.083 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/api/v1 - null null
+2025-12-11 13:53:46.092 -03:00 [INF] CORS policy execution successful.
+2025-12-11 13:53:46.093 -03:00 [INF] Executing endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 13:53:46.094 -03:00 [INF] Route matched with {action = "Get", controller = "Request01"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ApiAlmoxarifado.Controllers.Request01Controller (ApiAlmoxarifado).
+2025-12-11 13:53:46.098 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[ApiAlmoxarifado.Domain.Entities.Registros, ApiAlmoxarifado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 13:53:46.115 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Cnpj], [r].[CnpjEmpresa], [r].[DDL], [r].[Data_entrada], [r].[Data_pagamento], [r].[Empresa], [r].[RazaoSocial], [r].[Valor]
+FROM [Registros] AS [r]
+2025-12-11 13:53:46.117 -03:00 [INF] Executed action ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado) in 21.3405ms
+2025-12-11 13:53:46.118 -03:00 [INF] Executed endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 13:53:46.119 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/api/v1 - 200 null application/json; charset=utf-8 36.932ms
+2025-12-11 13:54:14.301 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/api/v1 - null null
+2025-12-11 13:54:14.309 -03:00 [INF] CORS policy execution successful.
+2025-12-11 13:54:14.311 -03:00 [INF] Executing endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 13:54:14.312 -03:00 [INF] Route matched with {action = "Get", controller = "Request01"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ApiAlmoxarifado.Controllers.Request01Controller (ApiAlmoxarifado).
+2025-12-11 13:54:14.314 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[ApiAlmoxarifado.Domain.Entities.Registros, ApiAlmoxarifado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 13:54:14.319 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Cnpj], [r].[CnpjEmpresa], [r].[DDL], [r].[Data_entrada], [r].[Data_pagamento], [r].[Empresa], [r].[RazaoSocial], [r].[Valor]
+FROM [Registros] AS [r]
+2025-12-11 13:54:14.322 -03:00 [INF] Executed action ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado) in 8.9687ms
+2025-12-11 13:54:14.324 -03:00 [INF] Executed endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 13:54:14.326 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/api/v1 - 200 null application/json; charset=utf-8 24.9801ms
+2025-12-11 13:58:37.544 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/api/v1 - null null
+2025-12-11 13:58:37.553 -03:00 [INF] CORS policy execution successful.
+2025-12-11 13:58:37.569 -03:00 [INF] Executing endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 13:58:37.570 -03:00 [INF] Route matched with {action = "Get", controller = "Request01"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ApiAlmoxarifado.Controllers.Request01Controller (ApiAlmoxarifado).
+2025-12-11 13:58:37.573 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[ApiAlmoxarifado.Domain.Entities.Registros, ApiAlmoxarifado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 13:58:37.592 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Cnpj], [r].[CnpjEmpresa], [r].[DDL], [r].[Data_entrada], [r].[Data_pagamento], [r].[Empresa], [r].[RazaoSocial], [r].[Valor]
+FROM [Registros] AS [r]
+2025-12-11 13:58:37.595 -03:00 [INF] Executed action ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado) in 23.009ms
+2025-12-11 13:58:37.603 -03:00 [INF] Executed endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 13:58:37.604 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/api/v1 - 200 null application/json; charset=utf-8 60.9694ms
+2025-12-11 13:58:52.672 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/api/v1 - null null
+2025-12-11 13:58:52.676 -03:00 [INF] CORS policy execution successful.
+2025-12-11 13:58:52.677 -03:00 [INF] Executing endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 13:58:52.679 -03:00 [INF] Route matched with {action = "Get", controller = "Request01"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ApiAlmoxarifado.Controllers.Request01Controller (ApiAlmoxarifado).
+2025-12-11 13:58:52.683 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[ApiAlmoxarifado.Domain.Entities.Registros, ApiAlmoxarifado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 13:58:52.687 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Cnpj], [r].[CnpjEmpresa], [r].[DDL], [r].[Data_entrada], [r].[Data_pagamento], [r].[Empresa], [r].[RazaoSocial], [r].[Valor]
+FROM [Registros] AS [r]
+2025-12-11 13:58:52.689 -03:00 [INF] Executed action ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado) in 7.6798ms
+2025-12-11 13:58:52.691 -03:00 [INF] Executed endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 13:58:52.692 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/api/v1 - 200 null application/json; charset=utf-8 20.0937ms
+2025-12-11 14:07:01.214 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/api/v1 - null null
+2025-12-11 14:07:01.222 -03:00 [INF] CORS policy execution successful.
+2025-12-11 14:07:01.223 -03:00 [INF] Executing endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:07:01.224 -03:00 [INF] Route matched with {action = "Get", controller = "Request01"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ApiAlmoxarifado.Controllers.Request01Controller (ApiAlmoxarifado).
+2025-12-11 14:07:01.226 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[ApiAlmoxarifado.Domain.Entities.Registros, ApiAlmoxarifado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 14:07:01.244 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Cnpj], [r].[CnpjEmpresa], [r].[DDL], [r].[Data_entrada], [r].[Data_pagamento], [r].[Empresa], [r].[RazaoSocial], [r].[Valor]
+FROM [Registros] AS [r]
+2025-12-11 14:07:01.246 -03:00 [INF] Executed action ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado) in 20.6493ms
+2025-12-11 14:07:01.248 -03:00 [INF] Executed endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:07:01.250 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/api/v1 - 200 null application/json; charset=utf-8 35.8253ms
+2025-12-11 14:08:09.656 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/api/v1 - null null
+2025-12-11 14:08:09.664 -03:00 [INF] CORS policy execution successful.
+2025-12-11 14:08:09.665 -03:00 [INF] Executing endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:08:09.667 -03:00 [INF] Route matched with {action = "Get", controller = "Request01"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ApiAlmoxarifado.Controllers.Request01Controller (ApiAlmoxarifado).
+2025-12-11 14:08:09.670 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[ApiAlmoxarifado.Domain.Entities.Registros, ApiAlmoxarifado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 14:08:09.674 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Cnpj], [r].[CnpjEmpresa], [r].[DDL], [r].[Data_entrada], [r].[Data_pagamento], [r].[Empresa], [r].[RazaoSocial], [r].[Valor]
+FROM [Registros] AS [r]
+2025-12-11 14:08:09.677 -03:00 [INF] Executed action ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado) in 7.7638ms
+2025-12-11 14:08:09.679 -03:00 [INF] Executed endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:08:09.681 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/api/v1 - 200 null application/json; charset=utf-8 25.1894ms
+2025-12-11 14:09:08.010 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/api/v1 - null null
+2025-12-11 14:09:08.020 -03:00 [INF] CORS policy execution successful.
+2025-12-11 14:09:08.021 -03:00 [INF] Executing endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:09:08.023 -03:00 [INF] Route matched with {action = "Get", controller = "Request01"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ApiAlmoxarifado.Controllers.Request01Controller (ApiAlmoxarifado).
+2025-12-11 14:09:08.027 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[ApiAlmoxarifado.Domain.Entities.Registros, ApiAlmoxarifado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 14:09:08.034 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Cnpj], [r].[CnpjEmpresa], [r].[DDL], [r].[Data_entrada], [r].[Data_pagamento], [r].[Empresa], [r].[RazaoSocial], [r].[Valor]
+FROM [Registros] AS [r]
+2025-12-11 14:09:08.038 -03:00 [INF] Executed action ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado) in 12.5607ms
+2025-12-11 14:09:08.040 -03:00 [INF] Executed endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:09:08.042 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/api/v1 - 200 null application/json; charset=utf-8 31.4851ms
+2025-12-11 14:11:36.826 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/api/v1 - null null
+2025-12-11 14:11:36.833 -03:00 [INF] CORS policy execution successful.
+2025-12-11 14:11:36.834 -03:00 [INF] Executing endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:11:36.835 -03:00 [INF] Route matched with {action = "Get", controller = "Request01"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ApiAlmoxarifado.Controllers.Request01Controller (ApiAlmoxarifado).
+2025-12-11 14:11:36.837 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[ApiAlmoxarifado.Domain.Entities.Registros, ApiAlmoxarifado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 14:11:36.843 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Cnpj], [r].[CnpjEmpresa], [r].[DDL], [r].[Data_entrada], [r].[Data_pagamento], [r].[Empresa], [r].[RazaoSocial], [r].[Valor]
+FROM [Registros] AS [r]
+2025-12-11 14:11:36.845 -03:00 [INF] Executed action ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado) in 8.4273ms
+2025-12-11 14:11:36.846 -03:00 [INF] Executed endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:11:36.847 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/api/v1 - 200 null application/json; charset=utf-8 20.9743ms
+2025-12-11 14:13:34.172 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/api/v1 - null null
+2025-12-11 14:13:34.179 -03:00 [INF] CORS policy execution successful.
+2025-12-11 14:13:34.180 -03:00 [INF] Executing endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:13:34.181 -03:00 [INF] Route matched with {action = "Get", controller = "Request01"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ApiAlmoxarifado.Controllers.Request01Controller (ApiAlmoxarifado).
+2025-12-11 14:13:34.184 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[ApiAlmoxarifado.Domain.Entities.Registros, ApiAlmoxarifado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 14:13:34.190 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Cnpj], [r].[CnpjEmpresa], [r].[DDL], [r].[Data_entrada], [r].[Data_pagamento], [r].[Empresa], [r].[RazaoSocial], [r].[Valor]
+FROM [Registros] AS [r]
+2025-12-11 14:13:34.193 -03:00 [INF] Executed action ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado) in 9.3151ms
+2025-12-11 14:13:34.194 -03:00 [INF] Executed endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:13:34.196 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/api/v1 - 200 null application/json; charset=utf-8 24.2195ms
+2025-12-11 14:16:34.400 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/api/v1 - null null
+2025-12-11 14:16:34.416 -03:00 [INF] CORS policy execution successful.
+2025-12-11 14:16:34.417 -03:00 [INF] Executing endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:16:34.419 -03:00 [INF] Route matched with {action = "Get", controller = "Request01"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ApiAlmoxarifado.Controllers.Request01Controller (ApiAlmoxarifado).
+2025-12-11 14:16:34.422 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[ApiAlmoxarifado.Domain.Entities.Registros, ApiAlmoxarifado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 14:16:34.429 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Cnpj], [r].[CnpjEmpresa], [r].[DDL], [r].[Data_entrada], [r].[Data_pagamento], [r].[Empresa], [r].[RazaoSocial], [r].[Valor]
+FROM [Registros] AS [r]
+2025-12-11 14:16:34.432 -03:00 [INF] Executed action ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado) in 11.0409ms
+2025-12-11 14:16:34.434 -03:00 [INF] Executed endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:16:34.436 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/api/v1 - 200 null application/json; charset=utf-8 36.0656ms
+2025-12-11 14:17:08.209 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/api/v1 - null null
+2025-12-11 14:17:08.217 -03:00 [INF] CORS policy execution successful.
+2025-12-11 14:17:08.218 -03:00 [INF] Executing endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:17:08.219 -03:00 [INF] Route matched with {action = "Get", controller = "Request01"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ApiAlmoxarifado.Controllers.Request01Controller (ApiAlmoxarifado).
+2025-12-11 14:17:08.222 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[ApiAlmoxarifado.Domain.Entities.Registros, ApiAlmoxarifado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 14:17:08.228 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Cnpj], [r].[CnpjEmpresa], [r].[DDL], [r].[Data_entrada], [r].[Data_pagamento], [r].[Empresa], [r].[RazaoSocial], [r].[Valor]
+FROM [Registros] AS [r]
+2025-12-11 14:17:08.229 -03:00 [INF] Executed action ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado) in 8.9756ms
+2025-12-11 14:17:08.231 -03:00 [INF] Executed endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:17:08.233 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/api/v1 - 200 null application/json; charset=utf-8 24.4841ms
+2025-12-11 14:18:02.721 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/api/v1 - null null
+2025-12-11 14:18:02.725 -03:00 [INF] CORS policy execution successful.
+2025-12-11 14:18:02.726 -03:00 [INF] Executing endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:18:02.728 -03:00 [INF] Route matched with {action = "Get", controller = "Request01"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ApiAlmoxarifado.Controllers.Request01Controller (ApiAlmoxarifado).
+2025-12-11 14:18:02.730 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[ApiAlmoxarifado.Domain.Entities.Registros, ApiAlmoxarifado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 14:18:02.735 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Cnpj], [r].[CnpjEmpresa], [r].[DDL], [r].[Data_entrada], [r].[Data_pagamento], [r].[Empresa], [r].[RazaoSocial], [r].[Valor]
+FROM [Registros] AS [r]
+2025-12-11 14:18:02.740 -03:00 [INF] Executed action ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado) in 11.0378ms
+2025-12-11 14:18:02.748 -03:00 [INF] Executed endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:18:02.749 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/api/v1 - 200 null application/json; charset=utf-8 27.8203ms
+2025-12-11 14:18:32.410 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/api/v1 - null null
+2025-12-11 14:18:32.420 -03:00 [INF] CORS policy execution successful.
+2025-12-11 14:18:32.421 -03:00 [INF] Executing endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:18:32.422 -03:00 [INF] Route matched with {action = "Get", controller = "Request01"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ApiAlmoxarifado.Controllers.Request01Controller (ApiAlmoxarifado).
+2025-12-11 14:18:32.426 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[ApiAlmoxarifado.Domain.Entities.Registros, ApiAlmoxarifado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 14:18:32.431 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Cnpj], [r].[CnpjEmpresa], [r].[DDL], [r].[Data_entrada], [r].[Data_pagamento], [r].[Empresa], [r].[RazaoSocial], [r].[Valor]
+FROM [Registros] AS [r]
+2025-12-11 14:18:32.434 -03:00 [INF] Executed action ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado) in 9.458ms
+2025-12-11 14:18:32.437 -03:00 [INF] Executed endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:18:32.438 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/api/v1 - 200 null application/json; charset=utf-8 28.8655ms
+2025-12-11 14:21:17.916 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/api/v1 - null null
+2025-12-11 14:21:17.927 -03:00 [INF] CORS policy execution successful.
+2025-12-11 14:21:17.929 -03:00 [INF] Executing endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:21:17.930 -03:00 [INF] Route matched with {action = "Get", controller = "Request01"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ApiAlmoxarifado.Controllers.Request01Controller (ApiAlmoxarifado).
+2025-12-11 14:21:17.933 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[ApiAlmoxarifado.Domain.Entities.Registros, ApiAlmoxarifado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 14:21:17.938 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Cnpj], [r].[CnpjEmpresa], [r].[DDL], [r].[Data_entrada], [r].[Data_pagamento], [r].[Empresa], [r].[RazaoSocial], [r].[Valor]
+FROM [Registros] AS [r]
+2025-12-11 14:21:17.942 -03:00 [INF] Executed action ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado) in 8.9153ms
+2025-12-11 14:21:17.945 -03:00 [INF] Executed endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:21:17.955 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/api/v1 - 200 null application/json; charset=utf-8 38.9408ms
+2025-12-11 14:26:11.425 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/api/v1 - null null
+2025-12-11 14:26:11.432 -03:00 [INF] CORS policy execution successful.
+2025-12-11 14:26:11.433 -03:00 [INF] Executing endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:26:11.434 -03:00 [INF] Route matched with {action = "Get", controller = "Request01"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ApiAlmoxarifado.Controllers.Request01Controller (ApiAlmoxarifado).
+2025-12-11 14:26:11.436 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[ApiAlmoxarifado.Domain.Entities.Registros, ApiAlmoxarifado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 14:26:11.451 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Cnpj], [r].[CnpjEmpresa], [r].[DDL], [r].[Data_entrada], [r].[Data_pagamento], [r].[Empresa], [r].[RazaoSocial], [r].[Valor]
+FROM [Registros] AS [r]
+2025-12-11 14:26:11.453 -03:00 [INF] Executed action ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado) in 18.3922ms
+2025-12-11 14:26:11.455 -03:00 [INF] Executed endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:26:11.456 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/api/v1 - 200 null application/json; charset=utf-8 31.2608ms
+2025-12-11 14:27:47.947 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/api/v1 - null null
+2025-12-11 14:27:47.959 -03:00 [INF] CORS policy execution successful.
+2025-12-11 14:27:47.960 -03:00 [INF] Executing endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:27:47.961 -03:00 [INF] Route matched with {action = "Get", controller = "Request01"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ApiAlmoxarifado.Controllers.Request01Controller (ApiAlmoxarifado).
+2025-12-11 14:27:47.963 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[ApiAlmoxarifado.Domain.Entities.Registros, ApiAlmoxarifado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 14:27:47.967 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Cnpj], [r].[CnpjEmpresa], [r].[DDL], [r].[Data_entrada], [r].[Data_pagamento], [r].[Empresa], [r].[RazaoSocial], [r].[Valor]
+FROM [Registros] AS [r]
+2025-12-11 14:27:47.969 -03:00 [INF] Executed action ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado) in 6.2596ms
+2025-12-11 14:27:47.971 -03:00 [INF] Executed endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:27:47.972 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/api/v1 - 200 null application/json; charset=utf-8 25.116ms
+2025-12-11 14:28:02.460 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/api/v1 - null null
+2025-12-11 14:28:02.463 -03:00 [INF] CORS policy execution successful.
+2025-12-11 14:28:02.463 -03:00 [INF] Executing endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:28:02.465 -03:00 [INF] Route matched with {action = "Get", controller = "Request01"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ApiAlmoxarifado.Controllers.Request01Controller (ApiAlmoxarifado).
+2025-12-11 14:28:02.468 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[ApiAlmoxarifado.Domain.Entities.Registros, ApiAlmoxarifado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 14:28:02.472 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Cnpj], [r].[CnpjEmpresa], [r].[DDL], [r].[Data_entrada], [r].[Data_pagamento], [r].[Empresa], [r].[RazaoSocial], [r].[Valor]
+FROM [Registros] AS [r]
+2025-12-11 14:28:02.475 -03:00 [INF] Executed action ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado) in 8.811ms
+2025-12-11 14:28:02.477 -03:00 [INF] Executed endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:28:02.478 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/api/v1 - 200 null application/json; charset=utf-8 18.2246ms
+2025-12-11 14:31:57.899 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7227/api/v1 - null null
+2025-12-11 14:31:57.906 -03:00 [INF] CORS policy execution successful.
+2025-12-11 14:31:57.907 -03:00 [INF] Executing endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:31:57.908 -03:00 [INF] Route matched with {action = "Get", controller = "Request01"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ApiAlmoxarifado.Controllers.Request01Controller (ApiAlmoxarifado).
+2025-12-11 14:31:57.910 -03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[ApiAlmoxarifado.Domain.Entities.Registros, ApiAlmoxarifado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 14:31:57.914 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Cnpj], [r].[CnpjEmpresa], [r].[DDL], [r].[Data_entrada], [r].[Data_pagamento], [r].[Empresa], [r].[RazaoSocial], [r].[Valor]
+FROM [Registros] AS [r]
+2025-12-11 14:31:57.917 -03:00 [INF] Executed action ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado) in 8.4986ms
+2025-12-11 14:31:57.919 -03:00 [INF] Executed endpoint 'ApiAlmoxarifado.Controllers.Request01Controller.Get (ApiAlmoxarifado)'
+2025-12-11 14:31:57.920 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7227/api/v1 - 200 null application/json; charset=utf-8 20.946ms
