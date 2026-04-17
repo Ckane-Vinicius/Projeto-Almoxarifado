@@ -24,7 +24,7 @@ namespace ApiAlmoxarifado.Application
 
             foreach (var ddl in request.Ddl)
             {
-                var data_pagamento = DateTime.Now.AddDays(ddl);
+                var data_pagamento = request.DataPedido.AddDays(ddl);
 
                 foreach (var registro in RegistroExistente)
                 {
@@ -45,7 +45,8 @@ namespace ApiAlmoxarifado.Application
                     DDL = ddl,
                     Valor = request.Valor,
                     Data_pagamento = data_pagamento,
-                    Data_entrada = DateTime.Now
+                    Data_entrada = DateTime.Now,
+                    Data_pedido = data_pagamento
                 };
 
                 await _applicationServices.AddAsync(Registro);

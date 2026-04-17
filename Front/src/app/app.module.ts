@@ -7,6 +7,8 @@ import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { MAT_DATE_LOCALE, MatNativeDateModule } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 @NgModule({
   imports: [
@@ -16,6 +18,8 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
     HttpClientModule,
     ComponentsModule,
     RouterModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
     AppRoutingModule,
   ],
   declarations: [
@@ -23,7 +27,9 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
     AdminLayoutComponent,   
 
   ],
-  providers: [],
+   providers: [
+    { provide: MAT_DATE_LOCALE, useValue: 'pt-BR' }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

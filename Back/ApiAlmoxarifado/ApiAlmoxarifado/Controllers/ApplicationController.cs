@@ -29,7 +29,7 @@ namespace ApiAlmoxarifado.Controllers
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occurred while processing the request.");
-                return StatusCode(500, "Internal server error");
+                return StatusCode(500, ex.Message);
             }
         }
 
@@ -45,7 +45,7 @@ namespace ApiAlmoxarifado.Controllers
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occurred while processing the request.");
-                return StatusCode(500, "Internal server error");
+                return StatusCode(500, ex.Message);
             }
         }
     }

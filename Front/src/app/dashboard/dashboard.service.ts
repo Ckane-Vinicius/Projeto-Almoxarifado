@@ -13,6 +13,7 @@ export interface ApiRecord {
   ddl: number;
   data_pagamento: string; // ISO
   data_entrada: string;   // ISO
+  data_pedido: string;
 }
 
 export interface Parcel {

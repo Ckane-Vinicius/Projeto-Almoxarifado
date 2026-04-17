@@ -14,6 +14,9 @@ namespace ApiAlmoxarifado.DTO
         [JsonProperty("razaosocial")]
         public required string Razaosocial { get; set; }
 
+        [JsonProperty("datapedido")]
+        public required DateTime DataPedido { get; set; }
+
         [JsonProperty("ddl")]
         public List<int> Ddl { get; set; }
 

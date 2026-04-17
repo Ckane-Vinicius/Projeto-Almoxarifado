@@ -10,5 +10,6 @@
         public int DDL { get; set; }
         public DateTime Data_pagamento { get; set; }
         public DateTime Data_entrada { get; set; }
+        public DateTime? Data_pedido{ get; set; }
     }
 }

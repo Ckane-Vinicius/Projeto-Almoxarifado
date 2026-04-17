@@ -54,7 +54,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
       cnpj: ['', Validators.required], // cnpj do destinatário (preenchido manualmente)
       razaosocial: [''],
       valor: ['', Validators.required],
-
+      data: [null],
       quantidadeParcelas: [1, [Validators.required, Validators.min(1)]],
       ddls: this.fb.array([], Validators.required)     
     });
@@ -156,6 +156,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
           cnpj: this.form.value.cnpj,
           razaosocial: this.form.value.razaosocial,
           valor: String(this.form.value.valor),
+          datapedido: this.form.value.data,
           ddl: this.ddls.controls.map(g => Number(g.get('ddl')?.value || 0))
         };
 
@@ -208,7 +209,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
       id: item.id,
       ddl: item.ddl,
       dueDate: item.data_pagamento,
-      entryDate: item.data_entrada,
+      entryDate: item.data_pedido,
       value: Number(String(item.valor).replace(',', '.')) || 0
     };
 
