@@ -34,7 +34,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
   private refresh$ = new Subject<void>();
   quantidade: number = 0;
 
-  form: FormGroup;
+  form!: FormGroup;
 
   // lista fixa de 4 empresas (exemplo)
   empresas: EmpresaItem[] = [
