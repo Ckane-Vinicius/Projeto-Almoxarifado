@@ -41,13 +41,10 @@ export interface CreateDto {
 
 @Injectable({ providedIn: 'root' })
 export class DdlCadastroService {
-  private apiUrl = environment.apiUrl;
-  private base = 'https://localhost:7227/api/v1'; // adjust or set environment
+  private apiUrl = environment.apiUrl;  
 
   constructor(private http: HttpClient) {}
-
   
-
   // GET all records
   getAll(): Observable<ApiRecord[]> {
     return this.http.get<ApiRecord[]>(`${this.apiUrl}/api/v1`);
